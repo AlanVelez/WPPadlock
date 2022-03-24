@@ -85,13 +85,13 @@ namespace WAFPProyectoFinal
             txtContraGenerada.Text = contraseña;
             contraseñaAleatoria = contraseña;
 
-            if (contraseña.Length>15 && chckNum.Checked && chckSim.Checked && (chckMayus.Checked || chckMinu.Checked)) {
+            if (contraseña.Length>13 && chckNum.Checked && chckSim.Checked && (chckMayus.Checked || chckMinu.Checked)) {
               
                 tipoContra("garrapata.png", "Fuerte", 3, 181, 77);
 
 
             }
-            else if (contraseña.Length > 8  && (chckNum.Checked || chckSim.Checked))
+            else if (contraseña.Length > 7  && (chckNum.Checked || chckSim.Checked))
             {
                 tipoContra("alerta.png", "Buena", 245, 183, 0);
             }
@@ -138,6 +138,21 @@ namespace WAFPProyectoFinal
         private void pnlNavegacion_MouseUp(object sender, MouseEventArgs e)
         {
             clickBorde=false;
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                btnMaximizar.BackgroundImage = Image.FromFile("maximizar.png");
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                btnMaximizar.BackgroundImage = Image.FromFile("maximizar2.png");
+
+                this.WindowState = FormWindowState.Maximized;
+            }
         }
     }
 }

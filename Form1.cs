@@ -51,51 +51,6 @@ namespace WAFPProyectoFinal
             formDidactico.Show();
         }
 
-        private void pctMemorama_Click(object sender, EventArgs e)
-        {
-            abrirMemorama();
-        }
-
-        private void lblTituloMemorama_Click(object sender, EventArgs e)
-        {
-            abrirMemorama();
-        }
-
-        private void lblTxtMemorama_Click(object sender, EventArgs e)
-        {
-            abrirMemorama();
-        }
-
-        private void pctInformate_Click(object sender, EventArgs e)
-        {
-            abrirInformate();
-        }
-
-        private void lblTituloInformate_Click(object sender, EventArgs e)
-        {
-            abrirInformate();
-        }
-
-        private void lblTxtInformate_Click(object sender, EventArgs e)
-        {
-            abrirInformate();
-        }
-
-        private void lblTituloGenerador_Click(object sender, EventArgs e)
-        {
-            abrirDidactico();
-        }
-
-        private void pctGenerador_Click(object sender, EventArgs e)
-        {
-            abrirDidactico();
-        }
-
-        private void lblTxtGenerador_Click(object sender, EventArgs e)
-        {
-            abrirDidactico();
-        }
-
         //Minimizar ventana
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
@@ -117,65 +72,11 @@ namespace WAFPProyectoFinal
         }
 
         //Boton Memorama
-        private void pctMemorama_MouseHover(object sender, EventArgs e)
-        {
-            hoverMemorama(lblTituloMemorama, lblTxtMemorama);
-        }
-
-        private void pctMemorama_MouseLeave(object sender, EventArgs e)
-        {
-            leaveMemorama(lblTituloMemorama, lblTxtMemorama);
-        }
+      
+            //hoverMemorama(lblTituloMemorama, lblTxtMemorama);
+            //leaveMemorama(lblTituloMemorama, lblTxtMemorama);
 
       
-        private void lblTituloMemorama_MouseHover(object sender, EventArgs e)
-        {
-            hoverMemorama(lblTituloMemorama, lblTxtMemorama);
-        }
-
-        private void lblTxtMemorama_MouseHover(object sender, EventArgs e)
-        {
-            hoverMemorama(lblTituloMemorama, lblTxtMemorama);
-        }
-
-        private void lblTituloMemorama_MouseLeave(object sender, EventArgs e)
-        {
-            leaveMemorama(lblTituloMemorama, lblTxtMemorama);
-        }
-
-        private void lblTxtMemorama_MouseLeave(object sender, EventArgs e)
-        {
-            leaveMemorama(lblTituloMemorama, lblTxtMemorama);
-        }
-
-        //Boton Informate
-
-        private void pctInformate_MouseHover(object sender, EventArgs e)
-        {
-            hoverMemorama(lblTituloInformate, lblTxtInformate);
-        }
-
-        private void lblTituloInformate_MouseHover(object sender, EventArgs e)
-        {
-            hoverMemorama(lblTituloInformate, lblTxtInformate);
-        }
-        private void pctInformate_MouseLeave(object sender, EventArgs e)
-        {
-            leaveMemorama(lblTituloInformate, lblTxtInformate);
-        }
-
-        //Boton Generador
-        private void pctGenerador_MouseHover(object sender, EventArgs e)
-        {
-            hoverMemorama(lblTxtGenerador, lblTituloGenerador);
-
-        }
-
-        private void pctGenerador_MouseLeave(object sender, EventArgs e)
-        {
-            leaveMemorama(lblTituloGenerador, lblTxtGenerador);
-
-        }
 
         private void pnlNavegacion_MouseMove(object sender, MouseEventArgs e)
         {
@@ -195,9 +96,65 @@ namespace WAFPProyectoFinal
             clickBorde = true;
         }
 
-        private void pnlNavegacion_Paint(object sender, PaintEventArgs e)
-        {
 
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            if(this.WindowState == FormWindowState.Maximized)
+            {
+                btnMaximizar.BackgroundImage = Image.FromFile("maximizar.png");
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                btnMaximizar.BackgroundImage = Image.FromFile("maximizar2.png");
+
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void pctMemorama_Click(object sender, EventArgs e)
+        {
+            abrirMemorama();
+        }
+
+        private void pctInformate_Click(object sender, EventArgs e)
+        {
+            abrirInformate();
+        }
+
+        private void lblTituloGenerador_Click(object sender, EventArgs e)
+        {
+            abrirDidactico();
+        }
+
+        private void pctMemorama_MouseHover(object sender, EventArgs e)
+        {
+            hoverMemorama(lblTituloMemorama, lblTxtMemorama);
+        }
+
+        private void pctMemorama_MouseLeave(object sender, EventArgs e)
+        {
+            leaveMemorama(lblTxtMemorama, lblTituloMemorama);
+        }
+
+        private void pctInformate_MouseHover(object sender, EventArgs e)
+        {
+            hoverMemorama(lblTituloInformate, lblTxtInformate);
+        }
+
+        private void pctInformate_MouseLeave(object sender, EventArgs e)
+        {
+            leaveMemorama(lblTituloInformate, lblTxtInformate);
+        }
+
+        private void lblTituloGenerador_MouseHover(object sender, EventArgs e)
+        {
+            hoverMemorama(lblTituloGenerador, lblTxtGenerador);
+        }
+
+        private void lblTituloGenerador_MouseLeave(object sender, EventArgs e)
+        {
+            leaveMemorama(lblTituloGenerador, lblTxtGenerador);
         }
     }
 }

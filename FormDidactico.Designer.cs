@@ -32,8 +32,8 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.pnlNavegacion = new System.Windows.Forms.Panel();
+            this.btnMaximizar = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.pctLogoGenerador = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblSlogan = new System.Windows.Forms.Label();
             this.lblLogo = new System.Windows.Forms.Label();
@@ -50,20 +50,26 @@
             this.txtCantCaracteres = new System.Windows.Forms.TextBox();
             this.btnGenerarIcon = new System.Windows.Forms.Button();
             this.chckSim = new System.Windows.Forms.CheckBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pctLogoGenerador = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pnlNavegacion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogoGenerador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLogoDaga)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctTipo)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogoGenerador)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnMinimizar
             // 
+            this.btnMinimizar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnMinimizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.BackgroundImage")));
             this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.FlatAppearance.BorderSize = 0;
             this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Location = new System.Drawing.Point(813, 8);
+            this.btnMinimizar.Location = new System.Drawing.Point(783, 8);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(20, 21);
             this.btnMinimizar.TabIndex = 6;
@@ -72,6 +78,7 @@
             // 
             // btnCerrar
             // 
+            this.btnCerrar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnCerrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCerrar.BackgroundImage")));
             this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -86,12 +93,14 @@
             // 
             // pnlNavegacion
             // 
+            this.pnlNavegacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlNavegacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(21)))), ((int)(((byte)(49)))));
+            this.pnlNavegacion.Controls.Add(this.btnMaximizar);
             this.pnlNavegacion.Controls.Add(this.btnRegresar);
-            this.pnlNavegacion.Controls.Add(this.pctLogoGenerador);
-            this.pnlNavegacion.Controls.Add(this.lblTitulo);
             this.pnlNavegacion.Controls.Add(this.btnMinimizar);
             this.pnlNavegacion.Controls.Add(this.btnCerrar);
+            this.pnlNavegacion.Controls.Add(this.panel1);
             this.pnlNavegacion.Location = new System.Drawing.Point(-1, 0);
             this.pnlNavegacion.Name = "pnlNavegacion";
             this.pnlNavegacion.Size = new System.Drawing.Size(885, 36);
@@ -99,6 +108,21 @@
             this.pnlNavegacion.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlNavegacion_MouseDown);
             this.pnlNavegacion.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlNavegacion_MouseMove);
             this.pnlNavegacion.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlNavegacion_MouseUp);
+            // 
+            // btnMaximizar
+            // 
+            this.btnMaximizar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnMaximizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.BackgroundImage")));
+            this.btnMaximizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMaximizar.FlatAppearance.BorderSize = 0;
+            this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximizar.Location = new System.Drawing.Point(816, 8);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(20, 21);
+            this.btnMaximizar.TabIndex = 44;
+            this.btnMaximizar.UseVisualStyleBackColor = true;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
             // btnRegresar
             // 
@@ -114,25 +138,13 @@
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
-            // pctLogoGenerador
-            // 
-            this.pctLogoGenerador.Image = ((System.Drawing.Image)(resources.GetObject("pctLogoGenerador.Image")));
-            this.pctLogoGenerador.Location = new System.Drawing.Point(536, 4);
-            this.pctLogoGenerador.Name = "pctLogoGenerador";
-            this.pctLogoGenerador.Size = new System.Drawing.Size(28, 28);
-            this.pctLogoGenerador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctLogoGenerador.TabIndex = 24;
-            this.pctLogoGenerador.TabStop = false;
-            this.pctLogoGenerador.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlNavegacion_MouseDown);
-            this.pctLogoGenerador.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlNavegacion_MouseMove);
-            this.pctLogoGenerador.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlNavegacion_MouseUp);
-            // 
             // lblTitulo
             // 
+            this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(319, 7);
+            this.lblTitulo.Location = new System.Drawing.Point(3, 2);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(216, 22);
             this.lblTitulo.TabIndex = 7;
@@ -143,10 +155,11 @@
             // 
             // lblSlogan
             // 
+            this.lblSlogan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSlogan.AutoSize = true;
             this.lblSlogan.Font = new System.Drawing.Font("Raleway Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSlogan.ForeColor = System.Drawing.Color.White;
-            this.lblSlogan.Location = new System.Drawing.Point(328, 126);
+            this.lblSlogan.Location = new System.Drawing.Point(173, 70);
             this.lblSlogan.Name = "lblSlogan";
             this.lblSlogan.Size = new System.Drawing.Size(231, 22);
             this.lblSlogan.TabIndex = 22;
@@ -154,12 +167,13 @@
             // 
             // lblLogo
             // 
+            this.lblLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLogo.AutoSize = true;
             this.lblLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
             this.lblLogo.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblLogo.Font = new System.Drawing.Font("Raleway ExtraBold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogo.ForeColor = System.Drawing.Color.White;
-            this.lblLogo.Location = new System.Drawing.Point(335, 56);
+            this.lblLogo.Location = new System.Drawing.Point(180, 0);
             this.lblLogo.Name = "lblLogo";
             this.lblLogo.Size = new System.Drawing.Size(217, 66);
             this.lblLogo.TabIndex = 21;
@@ -167,6 +181,7 @@
             // 
             // pctLogoDaga
             // 
+            this.pctLogoDaga.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pctLogoDaga.Image = ((System.Drawing.Image)(resources.GetObject("pctLogoDaga.Image")));
             this.pctLogoDaga.Location = new System.Drawing.Point(804, 491);
             this.pctLogoDaga.Name = "pctLogoDaga";
@@ -177,10 +192,11 @@
             // 
             // txtContraGenerada
             // 
+            this.txtContraGenerada.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtContraGenerada.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContraGenerada.Font = new System.Drawing.Font("Raleway", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraGenerada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
-            this.txtContraGenerada.Location = new System.Drawing.Point(255, 203);
+            this.txtContraGenerada.Location = new System.Drawing.Point(100, 147);
             this.txtContraGenerada.Multiline = true;
             this.txtContraGenerada.Name = "txtContraGenerada";
             this.txtContraGenerada.ReadOnly = true;
@@ -191,6 +207,7 @@
             // 
             // btnGenerar
             // 
+            this.btnGenerar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGenerar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
             this.btnGenerar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGenerar.BackgroundImage")));
             this.btnGenerar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -198,7 +215,7 @@
             this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerar.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerar.ForeColor = System.Drawing.Color.White;
-            this.btnGenerar.Location = new System.Drawing.Point(350, 425);
+            this.btnGenerar.Location = new System.Drawing.Point(195, 369);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(193, 54);
             this.btnGenerar.TabIndex = 32;
@@ -208,11 +225,12 @@
             // 
             // btnCopiar
             // 
+            this.btnCopiar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCopiar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCopiar.BackgroundImage")));
             this.btnCopiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCopiar.FlatAppearance.BorderSize = 0;
             this.btnCopiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCopiar.Location = new System.Drawing.Point(639, 207);
+            this.btnCopiar.Location = new System.Drawing.Point(484, 151);
             this.btnCopiar.Name = "btnCopiar";
             this.btnCopiar.Size = new System.Drawing.Size(27, 30);
             this.btnCopiar.TabIndex = 33;
@@ -221,13 +239,14 @@
             // 
             // chckMayus
             // 
+            this.chckMayus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chckMayus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
             this.chckMayus.Checked = true;
             this.chckMayus.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chckMayus.FlatAppearance.BorderSize = 0;
             this.chckMayus.Font = new System.Drawing.Font("Raleway SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chckMayus.ForeColor = System.Drawing.Color.White;
-            this.chckMayus.Location = new System.Drawing.Point(231, 312);
+            this.chckMayus.Location = new System.Drawing.Point(76, 256);
             this.chckMayus.Name = "chckMayus";
             this.chckMayus.Size = new System.Drawing.Size(268, 33);
             this.chckMayus.TabIndex = 34;
@@ -237,13 +256,14 @@
             // 
             // chckMinu
             // 
+            this.chckMinu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chckMinu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
             this.chckMinu.Checked = true;
             this.chckMinu.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chckMinu.FlatAppearance.BorderSize = 0;
             this.chckMinu.Font = new System.Drawing.Font("Raleway SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chckMinu.ForeColor = System.Drawing.Color.White;
-            this.chckMinu.Location = new System.Drawing.Point(231, 351);
+            this.chckMinu.Location = new System.Drawing.Point(76, 295);
             this.chckMinu.Name = "chckMinu";
             this.chckMinu.Size = new System.Drawing.Size(268, 33);
             this.chckMinu.TabIndex = 35;
@@ -253,11 +273,12 @@
             // 
             // chckNum
             // 
+            this.chckNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chckNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
             this.chckNum.FlatAppearance.BorderSize = 0;
             this.chckNum.Font = new System.Drawing.Font("Raleway SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chckNum.ForeColor = System.Drawing.Color.White;
-            this.chckNum.Location = new System.Drawing.Point(505, 312);
+            this.chckNum.Location = new System.Drawing.Point(350, 256);
             this.chckNum.Name = "chckNum";
             this.chckNum.Size = new System.Drawing.Size(189, 33);
             this.chckNum.TabIndex = 36;
@@ -267,10 +288,11 @@
             // 
             // lblNumCaracteres
             // 
+            this.lblNumCaracteres.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblNumCaracteres.AutoSize = true;
             this.lblNumCaracteres.Font = new System.Drawing.Font("Raleway SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumCaracteres.ForeColor = System.Drawing.Color.White;
-            this.lblNumCaracteres.Location = new System.Drawing.Point(358, 267);
+            this.lblNumCaracteres.Location = new System.Drawing.Point(203, 211);
             this.lblNumCaracteres.Name = "lblNumCaracteres";
             this.lblNumCaracteres.Size = new System.Drawing.Size(219, 26);
             this.lblNumCaracteres.TabIndex = 38;
@@ -279,8 +301,9 @@
             // 
             // pctTipo
             // 
+            this.pctTipo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pctTipo.Image = ((System.Drawing.Image)(resources.GetObject("pctTipo.Image")));
-            this.pctTipo.Location = new System.Drawing.Point(205, 203);
+            this.pctTipo.Location = new System.Drawing.Point(50, 147);
             this.pctTipo.Name = "pctTipo";
             this.pctTipo.Size = new System.Drawing.Size(42, 38);
             this.pctTipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -290,11 +313,12 @@
             // 
             // lblTipo
             // 
+            this.lblTipo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTipo.AutoSize = true;
             this.lblTipo.BackColor = System.Drawing.SystemColors.Control;
             this.lblTipo.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(181)))), ((int)(((byte)(77)))));
-            this.lblTipo.Location = new System.Drawing.Point(561, 211);
+            this.lblTipo.Location = new System.Drawing.Point(406, 155);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(60, 22);
             this.lblTipo.TabIndex = 40;
@@ -303,10 +327,11 @@
             // 
             // txtCantCaracteres
             // 
+            this.txtCantCaracteres.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCantCaracteres.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCantCaracteres.Font = new System.Drawing.Font("Raleway SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantCaracteres.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
-            this.txtCantCaracteres.Location = new System.Drawing.Point(305, 269);
+            this.txtCantCaracteres.Location = new System.Drawing.Point(150, 213);
             this.txtCantCaracteres.Multiline = true;
             this.txtCantCaracteres.Name = "txtCantCaracteres";
             this.txtCantCaracteres.Size = new System.Drawing.Size(47, 26);
@@ -316,12 +341,13 @@
             // 
             // btnGenerarIcon
             // 
+            this.btnGenerarIcon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGenerarIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
             this.btnGenerarIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGenerarIcon.BackgroundImage")));
             this.btnGenerarIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGenerarIcon.FlatAppearance.BorderSize = 0;
             this.btnGenerarIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerarIcon.Location = new System.Drawing.Point(672, 209);
+            this.btnGenerarIcon.Location = new System.Drawing.Point(517, 153);
             this.btnGenerarIcon.Name = "btnGenerarIcon";
             this.btnGenerarIcon.Size = new System.Drawing.Size(27, 26);
             this.btnGenerarIcon.TabIndex = 42;
@@ -330,11 +356,12 @@
             // 
             // chckSim
             // 
+            this.chckSim.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chckSim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
             this.chckSim.FlatAppearance.BorderSize = 0;
             this.chckSim.Font = new System.Drawing.Font("Raleway SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chckSim.ForeColor = System.Drawing.Color.White;
-            this.chckSim.Location = new System.Drawing.Point(505, 351);
+            this.chckSim.Location = new System.Drawing.Point(350, 295);
             this.chckSim.Name = "chckSim";
             this.chckSim.Size = new System.Drawing.Size(189, 33);
             this.chckSim.TabIndex = 43;
@@ -342,39 +369,75 @@
             this.chckSim.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chckSim.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.pctLogoGenerador);
+            this.panel1.Controls.Add(this.lblTitulo);
+            this.panel1.Location = new System.Drawing.Point(317, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(261, 30);
+            this.panel1.TabIndex = 45;
+            // 
+            // pctLogoGenerador
+            // 
+            this.pctLogoGenerador.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pctLogoGenerador.Image = ((System.Drawing.Image)(resources.GetObject("pctLogoGenerador.Image")));
+            this.pctLogoGenerador.Location = new System.Drawing.Point(216, 1);
+            this.pctLogoGenerador.Name = "pctLogoGenerador";
+            this.pctLogoGenerador.Size = new System.Drawing.Size(28, 28);
+            this.pctLogoGenerador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctLogoGenerador.TabIndex = 46;
+            this.pctLogoGenerador.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.chckSim);
+            this.panel2.Controls.Add(this.btnGenerarIcon);
+            this.panel2.Controls.Add(this.txtCantCaracteres);
+            this.panel2.Controls.Add(this.lblTipo);
+            this.panel2.Controls.Add(this.pctTipo);
+            this.panel2.Controls.Add(this.lblNumCaracteres);
+            this.panel2.Controls.Add(this.chckNum);
+            this.panel2.Controls.Add(this.chckMinu);
+            this.panel2.Controls.Add(this.chckMayus);
+            this.panel2.Controls.Add(this.btnCopiar);
+            this.panel2.Controls.Add(this.btnGenerar);
+            this.panel2.Controls.Add(this.txtContraGenerada);
+            this.panel2.Controls.Add(this.lblSlogan);
+            this.panel2.Controls.Add(this.lblLogo);
+            this.panel2.Location = new System.Drawing.Point(155, 56);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(600, 454);
+            this.panel2.TabIndex = 44;
+            // 
             // FormDidactico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(882, 533);
-            this.Controls.Add(this.chckSim);
-            this.Controls.Add(this.btnGenerarIcon);
-            this.Controls.Add(this.txtCantCaracteres);
-            this.Controls.Add(this.lblTipo);
-            this.Controls.Add(this.pctTipo);
-            this.Controls.Add(this.lblNumCaracteres);
-            this.Controls.Add(this.chckNum);
-            this.Controls.Add(this.chckMinu);
-            this.Controls.Add(this.chckMayus);
-            this.Controls.Add(this.btnCopiar);
-            this.Controls.Add(this.btnGenerar);
-            this.Controls.Add(this.txtContraGenerada);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pctLogoDaga);
-            this.Controls.Add(this.lblSlogan);
-            this.Controls.Add(this.lblLogo);
             this.Controls.Add(this.pnlNavegacion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormDidactico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Generador de contraseñas";
             this.pnlNavegacion.ResumeLayout(false);
-            this.pnlNavegacion.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogoGenerador)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLogoDaga)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctTipo)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogoGenerador)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -385,7 +448,6 @@
         private System.Windows.Forms.Label lblSlogan;
         private System.Windows.Forms.Label lblLogo;
         private System.Windows.Forms.PictureBox pctLogoDaga;
-        private System.Windows.Forms.PictureBox pctLogoGenerador;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.TextBox txtContraGenerada;
@@ -400,5 +462,9 @@
         private System.Windows.Forms.TextBox txtCantCaracteres;
         private System.Windows.Forms.Button btnGenerarIcon;
         private System.Windows.Forms.CheckBox chckSim;
+        private System.Windows.Forms.Button btnMaximizar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pctLogoGenerador;
+        private System.Windows.Forms.Panel panel2;
     }
 }

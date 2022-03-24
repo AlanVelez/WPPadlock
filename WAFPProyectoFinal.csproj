@@ -92,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -105,6 +106,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\carta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\carta2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\carta3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\carta4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\carta5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\carta6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cartaMemoDaga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\carta7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\carta8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cartaPrincipal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
