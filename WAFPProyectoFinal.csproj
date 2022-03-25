@@ -137,5 +137,14 @@
   <ItemGroup>
     <None Include="bin\Debug\cartaPrincipal.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\carta9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\carta10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\carta11.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

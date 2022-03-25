@@ -153,10 +153,10 @@ namespace WAFPProyectoFinal
             cartasSeleccionadasUsuario.Image = recuperarImagen(cartaActual);
             cartasSeleccionadas.Add(cartasSeleccionadasUsuario);
                 //Recuerda dos veces se hizo el evento del click
-                if(cartasSeleccionadas .Count == 2)
+                if (cartasSeleccionadas.Count == 2)
                 {
                     cartaTemporal1 = (PictureBox)cartasSeleccionadas[0];
-                    cartaTemporal2 = (PictureBox)cartasSeleccionadas[0];
+                    cartaTemporal2 = (PictureBox)cartasSeleccionadas[1];
                     int carta1 = Convert.ToInt32(cartasRevueeltas[Convert.ToInt32(cartaTemporal1.Name) - 1]);
                     int carta2 = Convert.ToInt32(cartasRevueeltas[Convert.ToInt32(cartaTemporal2.Name) - 1]);
 
@@ -170,7 +170,7 @@ namespace WAFPProyectoFinal
                         cantidadCartasVolteadas++;
                         if (cantidadCartasVolteadas > 7)
                         {
-                            MessageBox.Show("Eljuego termino");
+                            MessageBox.Show("¡GANASTE! El juego termino.");
                         }
                         cartaTemporal1.Enabled = false; cartaTemporal2.Enabled = false;
                         cartasSeleccionadas.Clear();
@@ -192,7 +192,8 @@ namespace WAFPProyectoFinal
             }
             return TmImg;
         }
-        private void timer1_Tick(object sender, EventArgs e)
+
+        private void timer1_Tick_1(object sender, EventArgs e)
         {
             int tiempoVirarCarta = 1;
             if (tiempoVirarCarta == 1)
@@ -203,8 +204,7 @@ namespace WAFPProyectoFinal
                 tiempoVirarCarta = 0;
                 timer1.Stop();
             }
-        }
 
-
+    }
     }
 }

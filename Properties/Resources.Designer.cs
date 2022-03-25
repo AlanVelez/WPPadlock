@@ -73,6 +73,26 @@ namespace WAFPProyectoFinal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carta10 {
+            get {
+                object obj = ResourceManager.GetObject("carta10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta11 {
+            get {
+                object obj = ResourceManager.GetObject("carta11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap carta2 {
             get {
                 object obj = ResourceManager.GetObject("carta2", resourceCulture);
@@ -136,6 +156,16 @@ namespace WAFPProyectoFinal.Properties {
         internal static System.Drawing.Bitmap carta8 {
             get {
                 object obj = ResourceManager.GetObject("carta8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta9 {
+            get {
+                object obj = ResourceManager.GetObject("carta9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
