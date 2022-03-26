@@ -65,24 +65,6 @@ namespace WAFPProyectoFinal
             }
         }
 
-        private void pnlNavegacion_MouseDown(object sender, MouseEventArgs e)
-        {
-            click_borde = true;
-        }
-
-        private void pnlNavegacion_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (click_borde)
-            {
-                this.Location = Cursor.Position;
-            }
-        }
-
-        private void pnlNavegacion_MouseUp(object sender, MouseEventArgs e)
-        {
-            click_borde = false;
-        }
-
         public void iniciarJuego()
         {
             timer1.Enabled = false;
@@ -205,6 +187,24 @@ namespace WAFPProyectoFinal
                 timer1.Stop();
             }
 
-    }
+        }
+
+        private void pnlNavegacion_MouseMove_1(object sender, MouseEventArgs e)
+        {
+            if (click_borde)
+            {
+                this.Location = Cursor.Position;
+            }
+        }
+
+        private void pnlNavegacion_MouseDown(object sender, MouseEventArgs e)
+        {
+            click_borde = true;
+        }
+
+        private void pnlNavegacion_MouseUp(object sender, MouseEventArgs e)
+        {
+            click_borde = false;
+        }
     }
 }

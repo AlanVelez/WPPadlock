@@ -124,6 +124,9 @@
             this.pnlNavegacion.Name = "pnlNavegacion";
             this.pnlNavegacion.Size = new System.Drawing.Size(882, 36);
             this.pnlNavegacion.TabIndex = 21;
+            this.pnlNavegacion.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlNavegacion_MouseDown);
+            this.pnlNavegacion.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlNavegacion_MouseMove_1);
+            this.pnlNavegacion.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlNavegacion_MouseUp);
             // 
             // btnMaximizar
             // 

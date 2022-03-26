@@ -12,7 +12,7 @@ namespace WAFPProyectoFinal
 {
     public partial class FormCultural : Form
     {
-        int i = 0;
+        int i = 0, a = 1;
         bool click_borde = false;
 
         public FormCultural()
@@ -41,26 +41,19 @@ namespace WAFPProyectoFinal
                                       "NuevaPresentacion5.jpg",
                                       "NuevaPresentacion6.jpg"};
 
-            if(i> 4){i = 0;}
+            if(i> 5){i = 0;}
 
-            if (i < 0){i = 4;}
+            if (i < 0){i = 5;}
 
             pctDiapositiva.Image = Image.FromFile(diapositivas[i]);
+
+            if (a > 6) { a = 1; }
+
+            if (a < 1) { a = 6; }
+            pctImg1.Image = Image.FromFile($"carta{a}.png");
+            pctImg2.Image = Image.FromFile($"carta{a}.png");
         }
 
-        private void btnAdelante_Click(object sender, EventArgs e)
-        {
-            i++;
-
-            botonesPrincipales();
-        }
-
-        private void btnAtras_Click(object sender, EventArgs e)
-        {
-            i--;
-
-            botonesPrincipales();
-        }
 
         private void btnTip_Click(object sender, EventArgs e)
         {
@@ -88,16 +81,19 @@ namespace WAFPProyectoFinal
 
         private void btnAdelante_Click_1(object sender, EventArgs e)
         {
-            i++;
 
+            i++;
+            a++;
             botonesPrincipales();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             i--;
-
+            a--;
             botonesPrincipales();
+           
         }
 
         private void btnTip_Click_1(object sender, EventArgs e)
@@ -173,5 +169,6 @@ namespace WAFPProyectoFinal
         {
             click_borde=false;
         }
+
     }
 }
