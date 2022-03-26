@@ -13,6 +13,7 @@ namespace WAFPProyectoFinal
     public partial class FormCultural : Form
     {
         int i = 0;
+        bool click_borde = false;
 
         public FormCultural()
         {
@@ -33,17 +34,18 @@ namespace WAFPProyectoFinal
 
         private void botonesPrincipales()
         {
-            String[] diapositivas = { "Diapositiva1.png", 
-                                      "Diapositiva2.png", 
-                                      "Diapositiva3.png",
-                                      "Diapositiva4.png",
-                                      "Diapositiva5.png"};
+            String[] diapositivas = { "NuevaPresentacion1.jpg",
+                                      "NuevaPresentacion2.jpg",
+                                      "NuevaPresentacion3.jpg",
+                                      "NuevaPresentacion4.jpg",
+                                      "NuevaPresentacion5.jpg",
+                                      "NuevaPresentacion6.jpg"};
 
             if(i> 4){i = 0;}
 
             if (i < 0){i = 4;}
 
-            pctDiapo.Image = Image.FromFile(diapositivas[i]);
+            pctDiapositiva.Image = Image.FromFile(diapositivas[i]);
         }
 
         private void btnAdelante_Click(object sender, EventArgs e)
@@ -67,21 +69,109 @@ namespace WAFPProyectoFinal
             switch (frase)
             {
                 case 1:
-                    lblTip.Text = "¡No utilices la misma contraseña en tus cuentas!";
+                    lbltip.Text = "¡No utilices la misma contraseña en tus cuentas!";
                     break;
                 case 2:
-                    lblTip.Text = "¡Conectarte a redes publicas con VPN podria salvar tus datos!";
+                    lbltip.Text = "¡Conectarte a redes publicas con VPN podria salvar tus datos!";
                     break;
                 case 3:
-                    lblTip.Text = "¡Revisa las actualizaciones de tu sistema!";
+                    lbltip.Text = "¡Revisa las actualizaciones de tu sistema!";
                     break;
                 case 4:
-                    lblTip.Text = "¡Utiliza un antivirus!";
+                    lbltip.Text = "¡Utiliza un antivirus!";
                     break;
                 case 5:
-                    lblTip.Text = "¡Utiliza solo paginas con el protocolo Https!";
+                    lbltip.Text = "¡Utiliza solo paginas con el protocolo Https!";
                     break;
             }
+        }
+
+        private void btnAdelante_Click_1(object sender, EventArgs e)
+        {
+            i++;
+
+            botonesPrincipales();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            i--;
+
+            botonesPrincipales();
+        }
+
+        private void btnTip_Click_1(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            int frase = random.Next(1, 6);
+            switch (frase)
+            {
+                case 1:
+                    lbltip.Text = "¡No utilices la misma contraseña en tus cuentas!";
+                    break;
+                case 2:
+                    lbltip.Text = "¡Conectarte a redes publicas con VPN podria salvar tus datos!";
+                    break;
+                case 3:
+                    lbltip.Text = "¡Revisa las actualizaciones de tu sistema!";
+                    break;
+                case 4:
+                    lbltip.Text = "¡Utiliza un antivirus!";
+                    break;
+                case 5:
+                    lbltip.Text = "¡Utiliza solo paginas con el protocolo Https!";
+                    break;
+            }
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                btnMaximizar.BackgroundImage = Image.FromFile("maximizar.png");
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                btnMaximizar.BackgroundImage = Image.FromFile("maximizar2.png");
+
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void btnRegresar_Click_1(object sender, EventArgs e)
+        {
+            Form1 frm1 = new Form1();
+            this.Hide();
+            frm1.Show();
+        }
+
+        private void pnlNavegacion_MouseDown(object sender, MouseEventArgs e)
+        {
+            click_borde = true;
+        }
+
+        private void pnlNavegacion_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (click_borde)
+            {
+                this.Location = Cursor.Position;
+            }
+        }
+
+        private void pnlNavegacion_MouseUp(object sender, MouseEventArgs e)
+        {
+            click_borde=false;
         }
     }
 }
