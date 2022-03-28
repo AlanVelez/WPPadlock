@@ -63,8 +63,9 @@
             this.pnlNavegacion.Controls.Add(this.btnCerrar);
             this.pnlNavegacion.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlNavegacion.Location = new System.Drawing.Point(0, 0);
+            this.pnlNavegacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlNavegacion.Name = "pnlNavegacion";
-            this.pnlNavegacion.Size = new System.Drawing.Size(882, 30);
+            this.pnlNavegacion.Size = new System.Drawing.Size(1176, 39);
             this.pnlNavegacion.TabIndex = 19;
             this.pnlNavegacion.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlNavegacion_MouseDown);
             this.pnlNavegacion.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlNavegacion_MouseMove);
@@ -78,9 +79,10 @@
             this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegresar.FlatAppearance.BorderSize = 0;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Location = new System.Drawing.Point(9, 3);
+            this.btnRegresar.Location = new System.Drawing.Point(12, 5);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(29, 24);
+            this.btnRegresar.Size = new System.Drawing.Size(39, 30);
             this.btnRegresar.TabIndex = 27;
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click_1);
@@ -93,9 +95,10 @@
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.FlatAppearance.BorderSize = 0;
             this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximizar.Location = new System.Drawing.Point(814, 6);
+            this.btnMaximizar.Location = new System.Drawing.Point(1085, 8);
+            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(20, 21);
+            this.btnMaximizar.Size = new System.Drawing.Size(27, 26);
             this.btnMaximizar.TabIndex = 27;
             this.btnMaximizar.UseVisualStyleBackColor = true;
             this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
@@ -108,9 +111,10 @@
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.FlatAppearance.BorderSize = 0;
             this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Location = new System.Drawing.Point(779, 6);
+            this.btnMinimizar.Location = new System.Drawing.Point(1039, 8);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(20, 21);
+            this.btnMinimizar.Size = new System.Drawing.Size(27, 26);
             this.btnMinimizar.TabIndex = 6;
             this.btnMinimizar.UseVisualStyleBackColor = true;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
@@ -123,9 +127,10 @@
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.FlatAppearance.BorderSize = 0;
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Location = new System.Drawing.Point(849, 6);
+            this.btnCerrar.Location = new System.Drawing.Point(1132, 8);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(20, 21);
+            this.btnCerrar.Size = new System.Drawing.Size(27, 26);
             this.btnCerrar.TabIndex = 5;
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -134,9 +139,10 @@
             // 
             this.pctLogoDaga.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pctLogoDaga.Image = ((System.Drawing.Image)(resources.GetObject("pctLogoDaga.Image")));
-            this.pctLogoDaga.Location = new System.Drawing.Point(806, 492);
+            this.pctLogoDaga.Location = new System.Drawing.Point(1075, 606);
+            this.pctLogoDaga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pctLogoDaga.Name = "pctLogoDaga";
-            this.pctLogoDaga.Size = new System.Drawing.Size(66, 30);
+            this.pctLogoDaga.Size = new System.Drawing.Size(88, 37);
             this.pctLogoDaga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctLogoDaga.TabIndex = 20;
             this.pctLogoDaga.TabStop = false;
@@ -147,10 +153,10 @@
             this.btnTip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTip.FlatAppearance.BorderSize = 0;
             this.btnTip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTip.Location = new System.Drawing.Point(9, 483);
-            this.btnTip.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTip.Location = new System.Drawing.Point(12, 594);
+            this.btnTip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTip.Name = "btnTip";
-            this.btnTip.Size = new System.Drawing.Size(44, 40);
+            this.btnTip.Size = new System.Drawing.Size(59, 49);
             this.btnTip.TabIndex = 21;
             this.btnTip.UseVisualStyleBackColor = true;
             this.btnTip.Click += new System.EventHandler(this.btnTip_Click_1);
@@ -158,22 +164,21 @@
             // lbltip
             // 
             this.lbltip.AutoSize = true;
-            this.lbltip.Font = new System.Drawing.Font("Raleway SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltip.ForeColor = System.Drawing.Color.White;
-            this.lbltip.Location = new System.Drawing.Point(58, 496);
-            this.lbltip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbltip.Location = new System.Drawing.Point(77, 610);
             this.lbltip.Name = "lbltip";
-            this.lbltip.Size = new System.Drawing.Size(138, 22);
+            this.lbltip.Size = new System.Drawing.Size(173, 25);
             this.lbltip.TabIndex = 22;
             this.lbltip.Text = "Presiona el foco.";
             // 
             // pctDiapositiva
             // 
             this.pctDiapositiva.Image = ((System.Drawing.Image)(resources.GetObject("pctDiapositiva.Image")));
-            this.pctDiapositiva.Location = new System.Drawing.Point(165, 150);
-            this.pctDiapositiva.Margin = new System.Windows.Forms.Padding(2);
+            this.pctDiapositiva.Location = new System.Drawing.Point(220, 185);
+            this.pctDiapositiva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctDiapositiva.Name = "pctDiapositiva";
-            this.pctDiapositiva.Size = new System.Drawing.Size(548, 324);
+            this.pctDiapositiva.Size = new System.Drawing.Size(731, 399);
             this.pctDiapositiva.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctDiapositiva.TabIndex = 23;
             this.pctDiapositiva.TabStop = false;
@@ -183,9 +188,10 @@
             this.pnlLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlLogo.Controls.Add(this.lblLogo);
             this.pnlLogo.Controls.Add(this.lblSlogan);
-            this.pnlLogo.Location = new System.Drawing.Point(304, 37);
+            this.pnlLogo.Location = new System.Drawing.Point(405, 46);
+            this.pnlLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(265, 124);
+            this.pnlLogo.Size = new System.Drawing.Size(353, 153);
             this.pnlLogo.TabIndex = 24;
             // 
             // lblLogo
@@ -194,11 +200,12 @@
             this.lblLogo.AutoSize = true;
             this.lblLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
             this.lblLogo.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblLogo.Font = new System.Drawing.Font("Raleway ExtraBold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogo.ForeColor = System.Drawing.Color.White;
-            this.lblLogo.Location = new System.Drawing.Point(30, 9);
+            this.lblLogo.Location = new System.Drawing.Point(40, 11);
+            this.lblLogo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(217, 66);
+            this.lblLogo.Size = new System.Drawing.Size(242, 69);
             this.lblLogo.TabIndex = 18;
             this.lblLogo.Text = "padlock";
             // 
@@ -206,11 +213,12 @@
             // 
             this.lblSlogan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSlogan.AutoSize = true;
-            this.lblSlogan.Font = new System.Drawing.Font("Raleway Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSlogan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSlogan.ForeColor = System.Drawing.Color.White;
-            this.lblSlogan.Location = new System.Drawing.Point(26, 75);
+            this.lblSlogan.Location = new System.Drawing.Point(35, 92);
+            this.lblSlogan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSlogan.Name = "lblSlogan";
-            this.lblSlogan.Size = new System.Drawing.Size(231, 22);
+            this.lblSlogan.Size = new System.Drawing.Size(296, 25);
             this.lblSlogan.TabIndex = 14;
             this.lblSlogan.Text = "Estar seguro de estar seguro.";
             // 
@@ -220,10 +228,10 @@
             this.btnAdelante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdelante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdelante.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
-            this.btnAdelante.Location = new System.Drawing.Point(717, 266);
-            this.btnAdelante.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdelante.Location = new System.Drawing.Point(956, 327);
+            this.btnAdelante.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdelante.Name = "btnAdelante";
-            this.btnAdelante.Size = new System.Drawing.Size(49, 76);
+            this.btnAdelante.Size = new System.Drawing.Size(65, 94);
             this.btnAdelante.TabIndex = 25;
             this.btnAdelante.UseVisualStyleBackColor = true;
             this.btnAdelante.Click += new System.EventHandler(this.btnAdelante_Click_1);
@@ -234,10 +242,10 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
-            this.button2.Location = new System.Drawing.Point(119, 266);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(159, 327);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(41, 76);
+            this.button2.Size = new System.Drawing.Size(55, 94);
             this.button2.TabIndex = 26;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -245,30 +253,32 @@
             // pctImg2
             // 
             this.pctImg2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(21)))), ((int)(((byte)(49)))));
-            this.pctImg2.Image = global::WAFPProyectoFinal.Properties.Resources.carta1;
-            this.pctImg2.Location = new System.Drawing.Point(610, 377);
+            this.pctImg2.Image = ((System.Drawing.Image)(resources.GetObject("pctImg2.Image")));
+            this.pctImg2.Location = new System.Drawing.Point(813, 464);
+            this.pctImg2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pctImg2.Name = "pctImg2";
-            this.pctImg2.Size = new System.Drawing.Size(102, 96);
+            this.pctImg2.Size = new System.Drawing.Size(136, 118);
             this.pctImg2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctImg2.TabIndex = 27;
             this.pctImg2.TabStop = false;
             // 
             // pctImg1
             // 
-            this.pctImg1.Image = global::WAFPProyectoFinal.Properties.Resources.carta1;
-            this.pctImg1.Location = new System.Drawing.Point(165, 150);
+            this.pctImg1.Image = ((System.Drawing.Image)(resources.GetObject("pctImg1.Image")));
+            this.pctImg1.Location = new System.Drawing.Point(220, 185);
+            this.pctImg1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pctImg1.Name = "pctImg1";
-            this.pctImg1.Size = new System.Drawing.Size(102, 96);
+            this.pctImg1.Size = new System.Drawing.Size(136, 118);
             this.pctImg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctImg1.TabIndex = 28;
             this.pctImg1.TabStop = false;
             // 
             // FormCultural
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(14)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(882, 533);
+            this.ClientSize = new System.Drawing.Size(1176, 656);
             this.Controls.Add(this.pctImg1);
             this.Controls.Add(this.pctImg2);
             this.Controls.Add(this.button2);
@@ -280,8 +290,10 @@
             this.Controls.Add(this.pnlNavegacion);
             this.Controls.Add(this.pnlLogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FormCultural";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.pnlNavegacion.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pctLogoDaga)).EndInit();
